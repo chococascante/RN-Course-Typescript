@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Do you smoke any tobacco products?",
+    "followUp": "How much and how often?"
+  },
+  {
+    "question": "Do you drink alcohol?",
+    "followUp": "How much and how often?"
+  },
+  {
+    "question": "Have you regularly used illicit drugs?",
+    "followUp": "How much and how often?"
+  },
+  {
+    "question": "Current medications",
+    "followUp": "Please list any medications you are currently taking including non-prescription medications, vitamins and supplements."
+  },
+  {
+    "question": "Medication allergies or reactions",
+    "followUp": "Please list any medication allergies or reactions"
+  },
+  {
+    "question": "List any surgeries or hospital stays you have had and their approximate date / year",
+    "followUp": "Type of surgery or reason for hospitalization"
+  }
+]
