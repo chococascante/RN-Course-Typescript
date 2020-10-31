@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import {View, Text} from 'react-native';
 import styled from '@emotion/native';
 import {TextInput} from 'react-native-paper';
-import GeneralInformation from '../../models/GeneralInformation.interface';
+import GeneralInformation from 'models/GeneralInformation.interface';
 import {useDispatch, useSelector} from 'react-redux';
-import {setGeneralInformation} from '../../store/actions/CurrenForm';
-import State from '../../models/State.interface';
+import {setGeneralInformation} from 'store/actions/CurrenForm';
+import State from 'models/State.interface';
 
 const Container = styled.ScrollView`
   width: 100%;

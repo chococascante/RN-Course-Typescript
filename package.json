@@ -20,13 +20,20 @@
     "@react-navigation/native": "^5.7.6",
     "@react-navigation/stack": "^5.9.3",
     "@types/chai": "^4.2.14",
-    "@types/enzyme": "^3.10.7",
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/react-redux": "^7.1.9",
+    "@types/redux-mock-store": "^1.0.2",
     "add": "^2.0.6",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-react-native": "^4.0.1",
     "chai": "^4.2.0",
     "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint-plugin-react": "^7.21.5",
+    "jest-fetch-mock": "^3.0.3",
     "mocha": "^8.2.0",
     "react": "^17.0.1",
     "react-addons-test-utils": "^15.6.2",
@@ -39,6 +46,7 @@
     "redux": "^4.0.5",
     "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0",
+    "ts-jest": "^26.4.3",
     "yarn": "^1.22.10"
   },
   "devDependencies": {
@@ -51,14 +59,24 @@
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^25.1.0",
-    "eslint": "^6.5.1",
-    "jest": "^25.1.0",
+    "eslint": "^7.12.1",
+    "jest": "^26.6.1",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.13.1",
     "typescript": "^3.8.3"
   },
   "jest": {
     "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.jest.json"
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -66,6 +84,12 @@
       "jsx",
       "json",
       "node"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "setupFiles": [
+      "./setup.js"
     ]
   }
 }
