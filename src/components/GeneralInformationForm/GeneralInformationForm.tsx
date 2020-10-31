@@ -1,15 +1,10 @@
 import React, {useState} from 'react';
-import styled from '@emotion/native';
 import {TextInput} from 'react-native-paper';
 import GeneralInformation from 'models/GeneralInformation.interface';
 import {useDispatch, useSelector} from 'react-redux';
 import {setGeneralInformation} from 'store/actions/CurrenForm';
 import State from 'models/State.interface';
-
-const Container = styled.ScrollView`
-  width: 100%;
-  height: 80%;
-`;
+import Container from 'components/Container';
 
 const GeneralInformationForm = () => {
   const dispatch = useDispatch();

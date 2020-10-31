@@ -1,4 +1,4 @@
-import App from './App';
+import ButtonsContainer from './ButtonsContainer';
 import {shallow, ShallowWrapper} from 'enzyme';
 import React from 'react';
 import configureMockStore from 'redux-mock-store';
@@ -25,6 +25,7 @@ const initialState: State = {
       zip: '',
       maritalStatus: '',
     },
+    selectedConditions: [],
   },
 };
 
@@ -33,7 +34,7 @@ describe('App', () => {
     const store = mockStore(initialState);
     const wrapper: ShallowWrapper = shallow(
       <Provider store={store}>
-        <App />
+        <ButtonsContainer />
       </Provider>,
     );
   });
