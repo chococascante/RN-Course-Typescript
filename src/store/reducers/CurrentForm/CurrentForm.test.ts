@@ -10,7 +10,6 @@ import CurrentFormState from 'models/CurrentFormState.interface';
 import GeneralInformation from 'models/GeneralInformation.interface';
 import Condition from 'models/Condition.interface';
 
-const mockStore = configureMockStore([thunk]);
 const initialState: CurrentFormState = {
   generalInformation: {
     firstName: '',

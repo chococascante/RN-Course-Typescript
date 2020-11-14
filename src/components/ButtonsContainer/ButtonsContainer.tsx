@@ -3,6 +3,10 @@ import styled from '@emotion/native';
 import {useDispatch, useSelector} from 'react-redux';
 import State from '../../models/State.interface';
 import {setActiveStep} from '../../store/actions/MultiStep';
+import {
+  retrieveDataFromStorage,
+  saveFormInStorage,
+} from 'store/actions/CurrenForm';
 
 const Container = styled.SafeAreaView`
   width: 100%;
@@ -29,8 +33,19 @@ const ButtonsContainer = () => {
     if (!isLastStep) dispatch(setActiveStep(activeStep + 1));
   };
 
+  const handleSaveButton = () => {
+    dispatch(saveFormInStorage());
+  };
+
+  const handleGetDataButton = () => {
+    dispatch(retrieveDataFromStorage());
+  };
+
   return (
     <Container>
+      <Button title="Get Data" onPress={handleGetDataButton} />
+      <Button title="Save Data" onPress={handleSaveButton} />
+
       <Button disabled={isFirstStep} title="Back" onPress={handleBackPress} />
       <Button
         disabled={isLastStep}

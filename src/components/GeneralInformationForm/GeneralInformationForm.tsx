@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {TextInput} from 'react-native-paper';
 import GeneralInformation from 'models/GeneralInformation.interface';
 import {useDispatch, useSelector} from 'react-redux';

@@ -13,6 +13,7 @@
     "@emotion/core": "^10.0.35",
     "@emotion/native": "^10.0.27",
     "@emotion/styled-base": "^10.0.31",
+    "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/datetimepicker": "^3.0.4",
     "@react-navigation/bottom-tabs": "^5.9.2",
     "@react-navigation/drawer": "^5.9.3",
@@ -96,11 +97,5 @@
     "setupFiles": [
       "./setup.js"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn test",
-      "pre-push": "yarn test"
-    }
   }
 }
