@@ -13,6 +13,7 @@ import configureStore from './src/store/configureStore';
 import {Provider as PaperProvider} from 'react-native-paper';
 import {Provider} from 'react-redux';
 import MainContainer from './src/components/MainContainer';
+import GeolocationTest from 'components/GeolocationTest';
 
 const store = configureStore();
 
@@ -20,7 +21,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <PaperProvider>
-        <MainContainer />
+        <GeolocationTest />
       </PaperProvider>
     </Provider>
   );
