@@ -11,9 +11,7 @@ Geolocation.setRNConfiguration({
 });
 
 MapboxGL.setConnected(true);
-MapboxGL.setAccessToken(
-  'pk.eyJ1IjoibHVpc2Nhc2NhdGUiLCJhIjoiY2thZTV4enBnMDkzejJ6bXdteW9zdXVpYSJ9.H9s_qcrjappLp5MRtgHAxQ',
-);
+MapboxGL.setAccessToken('');
 
 const markers = [{lng: -84.1084, lat: 9.938, name: 'Estadio Nacional'}];
 

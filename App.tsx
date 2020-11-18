@@ -21,7 +21,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <PaperProvider>
-        <GeolocationTest />
+        <MainContainer />
       </PaperProvider>
     </Provider>
   );
